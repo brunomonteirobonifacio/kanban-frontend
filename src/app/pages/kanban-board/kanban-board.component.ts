@@ -12,10 +12,10 @@ import { KanbanTaskCardComponent } from '../../kanban-task-card/kanban-task-card
 })
 export class KanbanBoardComponent {
   tabs: Tab[] = [
-    new Tab(1, 1, 'Unstarted', '#d6000020', [
+    new Tab(1, 'Unstarted', '#d6000020', [
       new Card(1, 'Title', 'Content'),
     ]),
-    new Tab(2, 1, 'In Progress', '#00ffff20'),
-    new Tab(3, 1, 'Completed', '#80ff0020', [], ActionOnMove.FINISH),
+    new Tab(2, 'In Progress', '#00ffff20'),
+    new Tab(3, 'Completed', '#80ff0020', [], ActionOnMove.FINISH),
   ]
 }
