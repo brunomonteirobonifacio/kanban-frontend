@@ -5,8 +5,8 @@
   border-radius: 10px;
   justify-content: space-around;
   padding: 15px;
-  gap: 10px;
-  margin: 5vh 10vw;
+  gap: 20px;
+  margin: 5vh 5vw;
   overflow-x: auto;
   overflow-y: hidden;
 }
