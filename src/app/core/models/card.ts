@@ -1,4 +1,4 @@
-import {CardStatus} from './enums/card-status';
+import {CardStatus} from '../enums/card-status';
 
 export class Card {
   id: number;

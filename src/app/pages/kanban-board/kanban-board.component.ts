@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Tab } from '../../core/models/tab';
-import { ActionOnMove } from '../../core/models/enums/action-on-move';
+import { ActionOnMove } from '../../core/enums/action-on-move';
 import { Card } from '../../core/models/card';
 import { KanbanTaskCardComponent } from '../../kanban-task-card/kanban-task-card.component';
 
