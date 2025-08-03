@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input } from '@angular/core';
+import { Card } from '../core/models/card';
 
 @Component({
   selector: 'app-kanban-task-card',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './kanban-task-card.component.css'
 })
 export class KanbanTaskCardComponent {
-
+  @Input() card: Card | undefined;
 }

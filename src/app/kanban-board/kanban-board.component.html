@@ -1,14 +1,12 @@
 <div class="board">
-  <div class="column" style="background-color: #d6000020;">
-    <h2>Unstarted</h2>
-    <div>
-      <app-kanban-task-card></app-kanban-task-card>
+  @for (tab of tabs; track tab.id) {
+    <div class="tab" [style]="{'background-color': tab.color}">
+      <h2>{{tab.name}}</h2>
+      <div>
+        @for (card of tab.cards; track card.id) {
+          <app-kanban-task-card [card]="card"></app-kanban-task-card>
+        }
+      </div>
     </div>
-  </div>
-  <div class="column" style="background-color: #00ffff20;">
-    <h2>In Progress</h2>
-  </div>
-  <div class="column" style="background-color: #80ff0020">
-    <h2>Done</h2>
-  </div>
+  }
 </div>

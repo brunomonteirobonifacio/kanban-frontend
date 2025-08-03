@@ -8,5 +8,11 @@ import { KanbanTaskCardComponent } from '../kanban-task-card/kanban-task-card.co
   styleUrl: './kanban-board.component.css'
 })
 export class KanbanBoardComponent {
-
+  tabs: Tab[] = [
+    new Tab(1, 1, 'Unstarted', '#d6000020', [
+      new Card(1, 'Title', 'Content'),
+    ]),
+    new Tab(2, 1, 'In Progress', '#00ffff20'),
+    new Tab(3, 1, 'Completed', '#80ff0020', [], ActionOnMove.FINISH),
+  ]
 }
