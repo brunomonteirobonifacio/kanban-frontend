@@ -1,0 +1,43 @@
+.board {
+  display: flex;
+  flex-direction: row;
+  border: 1px grey solid;
+  border-radius: 10px;
+  justify-content: space-around;
+  padding: 5px;
+  gap: 10px;
+  margin: 5vh 10vw;
+}
+
+.column {
+  display: flex;
+  flex: 1;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.unstarted {
+  background-color: #d6000020;
+  color: #d6000080
+}
+
+.in_progress {
+  background-color: #00ffff20;
+  color: #008f8f80;
+}
+
+.done {
+  background-color: #80ff0020;
+  color: #478f0080;
+}
+
+.task_card {
+  background-color: white;
+  padding: 5px 10px;
+  margin: 15px 0;
+  color: black;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
