@@ -16,21 +16,7 @@
   padding: 0 15px;
   display: flex;
   flex-direction: column;
-}
-
-.unstarted {
-  background-color: #d6000020;
-  color: #d6000080
-}
-
-.in_progress {
-  background-color: #00ffff20;
-  color: #008f8f80;
-}
-
-.done {
-  background-color: #80ff0020;
-  color: #478f0080;
+  color: black;
 }
 
 .task_card {
