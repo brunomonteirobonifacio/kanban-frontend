@@ -2,9 +2,8 @@ import { ActionOnMove } from './enums/action-on-move';
 import { Card } from './card';
 
 export class Tab {
-  // ACEITA NULL TEMPORARIAMENTE PRA FACILITAR OS TESTES
   id: number;
-  userId: number | null;
+  userId: number;
   name: string;
   color: string;
   cards: Card[];
