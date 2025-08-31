@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  min-width: 300px;
+  justify-content: center;
+  justify-self: center;
+  padding: 2rem;
+  margin: 5rem auto;
+}
