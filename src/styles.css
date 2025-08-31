@@ -1,4 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  --primary-color: #5162DB;
+  --secondary-color: #9A51DB;
+
+  --background-color-dark: #171717;
+  --background-color-highlight-dark: #252525;
+  --text-color-dark: #F5F5F5;
+
+  --background-color-light: #F5F5F5;
+  --background-color-highlight-light: #F5F5F5;
+  --text-color-light: #171717;
+
+  --background-color: var(--background-color-light);
+  --background-color-highlight: var(--background-color-highlight-light);
+  --text-color: var(--text-color-light);
+
+  --mat-sys-primary: var(--primary-color);
+  --mat-sys-on-primary: var(--background-color);
+  --mat-sys-surface: var(--background-color);
+  --mat-sys-on-surface: var(--text-color);
+  --mat-sys-surface-variant: var(--background-color-highlight);
+  --mat-sys-outline-variant: var(--primary-color);
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: var(--background-color); }
+
+@media (prefers-color-scheme: light) or (prefers-color-scheme: no-preference) {
+  :root {
+    --background-color: var(--background-color-light);
+    --background-color-highlight: var(--background-color-highlight-light);
+    --text-color: var(--text-color-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--background-color-dark);
+    --background-color-highlight: var(--background-color-highlight-dark);
+    --text-color: var(--text-color-dark);
+  }
+}
