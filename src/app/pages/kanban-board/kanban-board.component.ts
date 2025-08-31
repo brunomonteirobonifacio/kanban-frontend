@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Tab } from '../../core/models/tab';
 import { ActionOnMove } from '../../core/enums/action-on-move';
-import { Card } from '../../core/models/card';
 import { KanbanTaskCardComponent } from '../../kanban-task-card/kanban-task-card.component';
+import { CardStatus } from '../../core/enums/card-status';
 
 @Component({
   selector: 'app-kanban-board',
@@ -12,10 +12,26 @@ import { KanbanTaskCardComponent } from '../../kanban-task-card/kanban-task-card
 })
 export class KanbanBoardComponent {
   tabs: Tab[] = [
-    new Tab(1, 'Unstarted', '#d6000020', [
-      new Card(1, 'Title', 'Content'),
-    ]),
-    new Tab(2, 'In Progress', '#00ffff20'),
-    new Tab(3, 'Completed', '#80ff0020', [], ActionOnMove.FINISH),
+    {
+      id: 1,
+      name: 'Unstarted',
+      color: '#d6000020',
+      cards: [
+        { id: 1, title: 'Title', content: 'Content', status: CardStatus.PENDING }
+      ]
+    },
+    {
+      id: 2,
+      name: 'In Progress',
+      color: '#00ffff20',
+      cards: []
+    },
+    {
+      id: 3,
+      name: 'Completed',
+      color: '#80ff0020',
+      cards: [],
+      actionOnMove: ActionOnMove.FINISH
+    }
   ]
 }

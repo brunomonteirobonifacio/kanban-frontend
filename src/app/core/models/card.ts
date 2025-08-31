@@ -1,15 +1,8 @@
-import {CardStatus} from '../enums/card-status';
+import { CardStatus } from '../enums/card-status';
 
-export class Card {
+export type Card = {
   id: number;
   title: string;
   content: string;
   status: CardStatus;
-
-  constructor(id: number, title: string, content: string, status: CardStatus = CardStatus.PENDING) {
-    this.id = id;
-    this.title = title;
-    this.content = content;
-    this.status = status;
-  }
 }
